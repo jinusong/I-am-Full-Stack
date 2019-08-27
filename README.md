@@ -1,2 +1,2 @@
 # I-am-Full-Stack
-TodoList With Spring boot + Android
+아 풀스택되고 싶다~
