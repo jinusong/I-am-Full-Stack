@@ -6,6 +6,7 @@ branches:
   only:
   - master
 
+# Travis CI 서버의 Home
 cache:
   directories:
   - '$HOME/.m2/repository'
@@ -20,30 +21,31 @@ before_deploy:
 
 deploy:
 - provider: s3
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
-  bucket: todolist-deploy
+  access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+  secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+  bucket: todolist-deploy # S3 버킷
   region: ap-northeast-2
   skip_cleanup: true
   acl: public_read
+  local_dir: deploy # before_deploy에서 생성한 디렉토리
   wait-until-deployed: true
   on:
     repo: jinusong/I-am-Full-Stack
     branch: master
 
 - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: todolist-deploy
-    key: I-am-Full-Stack.zip
-    bundle_type: zip
-    application: todolist
-    deployment_group: todolist-group
-    region: ap-northeast-2
-    wait-until-deployed: true
-    on:
-      repo: jinusong/I-am-Full-Stack
-      branch: master
+  access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+  secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+  bucket: todolist-deploy # S3 버킷
+  key: I-am-Full-Stack.zip # S3 버킷에 저장된 springboot-webservice.zip 파일을 EC2로 배포
+  bundle_type: zip
+  application: todolist # 웹 콘솔에서 등록한 CodeDeploy 어플리케이션
+  deployment_group: todolist-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
+  region: ap-northeast-2
+  wait-until-deployed: true
+  on:
+    repo: jinusong/I-am-Full-Stack
+    branch: master
 
 notifications:
   email:
