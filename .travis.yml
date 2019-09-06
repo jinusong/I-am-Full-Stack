@@ -18,6 +18,11 @@ notifications:
     recipients:
     - sugwer7464@gmail.com
 
+before_deploy:
+- zip -r I-am-Full-Stack *
+- mkdir -p deploy
+- mv I-am-Full-Stack.zip deploy/I-am-Full-Stack.zip
+
 deploy:
 - provider: s3
   access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
