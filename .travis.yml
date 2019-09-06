@@ -28,5 +28,5 @@ deploy:
   acl: public_read
   wait-until-deployed: true
   on:
-    repo: inusong/I-am-Full-Stack #Github 주소
+    repo: jinusong/I-am-Full-Stack #Github 주소
     branch: master
