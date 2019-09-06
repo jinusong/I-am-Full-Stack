@@ -1,4 +1,4 @@
-package com.jinwoo.todoList.TodoList.entity
+package com.jinwoo.todolist.TodoList.entity
 
 data class Todo(
         val title: String,

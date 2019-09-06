@@ -1,4 +1,4 @@
-package com.jinwoo.todoList.TodoList
+package com.jinwoo.todolist.TodoList
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

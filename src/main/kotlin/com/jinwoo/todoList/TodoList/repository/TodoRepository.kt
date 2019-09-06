@@ -1,4 +1,4 @@
-package com.jinwoo.todoList.TodoList.repository
+package com.jinwoo.todolist.TodoList.repository
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository

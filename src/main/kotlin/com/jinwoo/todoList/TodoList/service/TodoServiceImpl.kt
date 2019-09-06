@@ -1,8 +1,8 @@
-package com.jinwoo.todoList.TodoList.service
+package com.jinwoo.todolist.TodoList.service
 
-import com.jinwoo.todoList.TodoList.entity.Todo
-import com.jinwoo.todoList.TodoList.repository.TodoModel
-import com.jinwoo.todoList.TodoList.repository.TodoRepository
+import com.jinwoo.todolist.TodoList.entity.Todo
+import com.jinwoo.todolist.TodoList.repository.TodoModel
+import com.jinwoo.todolist.TodoList.repository.TodoRepository
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 

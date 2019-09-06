@@ -1,7 +1,7 @@
-package com.jinwoo.todoList.TodoList.service
+package com.jinwoo.todolist.TodoList.service
 
-import com.jinwoo.todoList.TodoList.entity.Todo
-import com.jinwoo.todoList.TodoList.repository.TodoModel
+import com.jinwoo.todolist.TodoList.entity.Todo
+import com.jinwoo.todolist.TodoList.repository.TodoModel
 
 interface TodoService {
     fun getTodoList(): List<TodoModel>

@@ -1,8 +1,8 @@
-package com.jinwoo.todoList.TodoList.controller
+package com.jinwoo.todolist.TodoList.controller
 
-import com.jinwoo.todoList.TodoList.entity.Todo
-import com.jinwoo.todoList.TodoList.repository.TodoModel
-import com.jinwoo.todoList.TodoList.service.TodoService
+import com.jinwoo.todolist.TodoList.entity.Todo
+import com.jinwoo.todolist.TodoList.repository.TodoModel
+import com.jinwoo.todolist.TodoList.service.TodoService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
