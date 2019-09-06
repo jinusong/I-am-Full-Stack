@@ -1,4 +1,4 @@
-package com.jinwoo.todoList.TodoList
+package com.jinwoo.todolist.TodoList
 
 import org.junit.Test
 import org.junit.runner.RunWith
