@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-- source: ./
-  destination: /I-am-Full-Stack/travis/build/
+- source: /
+  destination: /home/ubuntu/I-am-Full-Stack/travis/build/
