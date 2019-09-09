@@ -1,2 +1,2 @@
 #!/bin/bash
-/home/ubuntu/I-am-Full-Stack/travis/deploy.sh > /dev/null 2> /dev/null < /dev/null &
+sh /home/ubuntu/I-am-Full-Stack/travis/deploy.sh > /dev/null 2> /dev/null < /dev/null &
